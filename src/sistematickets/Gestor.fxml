@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistematickets.GestorController">
+   <children>
+      <TabPane cache="true" layoutX="121.0" pickOnBounds="false" prefHeight="420.0" prefWidth="586.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Tickets">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="641.0">
+                     <children>
+                        <TextField layoutX="57.0" layoutY="86.0" />
+                        <TextField layoutX="229.0" layoutY="31.0" />
+                        <TextArea layoutX="51.0" layoutY="130.0" prefHeight="79.0" prefWidth="502.0" />
+                        <TextArea layoutX="57.0" layoutY="247.0" prefHeight="87.0" prefWidth="490.0" />
+                        <Label layoutX="57.0" layoutY="67.0" text="No.Ticket" />
+                        <Label layoutX="229.0" layoutY="14.0" text="Solicitante" />
+                        <Label layoutX="404.0" layoutY="14.0" text="Estado" />
+                        <Label layoutX="51.0" layoutY="112.0" text="Descripcion" />
+                        <Label layoutX="57.0" layoutY="229.0" text="Notas" />
+                        <ComboBox layoutX="404.0" layoutY="32.0" prefWidth="150.0" />
+                        <Button layoutX="68.0" layoutY="344.0" mnemonicParsing="false" text="Crear" />
+                        <Button layoutX="139.0" layoutY="344.0" mnemonicParsing="false" text="Modificar" />
+                        <Button layoutX="227.0" layoutY="344.0" mnemonicParsing="false" text="Buscar" />
+                        <Button layoutX="294.0" layoutY="344.0" mnemonicParsing="false" text="Eliminar" />
+                        <TextField layoutX="400.0" layoutY="99.0" />
+                        <Label layoutX="400.0" layoutY="81.0" text="Tecnico" />
+                        <Button layoutX="375.0" layoutY="344.0" mnemonicParsing="false" text="Asignar" />
+                        <TextField layoutX="224.0" layoutY="95.0" prefHeight="26.0" prefWidth="150.0" />
+                        <Label layoutX="226.0" layoutY="76.0" text="Departamento" />
+                        <ComboBox accessibleText="mis tickets" editable="true" layoutX="55.0" layoutY="31.0" prefWidth="150.0" visibleRowCount="3" />
+                        <Label layoutX="52.0" layoutY="14.0" text="Selección" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Usuarios">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton layoutX="62.0" layoutY="174.0" mnemonicParsing="false" text="Crear Tickets" />
+                        <RadioButton layoutX="60.0" layoutY="272.0" mnemonicParsing="false" text="Eliminar Tickets" />
+                        <RadioButton layoutX="62.0" layoutY="239.0" mnemonicParsing="false" text="Editar Tickets" />
+                        <RadioButton layoutX="62.0" layoutY="205.0" mnemonicParsing="false" text="Ver Tickets" />
+                        <RadioButton layoutX="59.0" layoutY="308.0" mnemonicParsing="false" text="Asignar Tickets" />
+                        <TextField layoutX="27.0" layoutY="46.0" />
+                        <TextField layoutX="201.0" layoutY="46.0" prefHeight="26.0" prefWidth="345.0" />
+                        <TextField layoutX="25.0" layoutY="99.0" prefHeight="26.0" prefWidth="178.0" />
+                        <TextField layoutX="215.0" layoutY="99.0" />
+                        <TextField layoutX="376.0" layoutY="99.0" />
+                        <Label layoutX="27.0" layoutY="29.0" text="ID" />
+                        <Label layoutX="201.0" layoutY="29.0" text="Nombre" />
+                        <Label layoutX="25.0" layoutY="85.0" text="Email" />
+                        <Label layoutX="217.0" layoutY="85.0" text="Contraseña" />
+                        <Label layoutX="374.0" layoutY="85.0" text="Departamento" />
+                        <RadioButton layoutX="195.0" layoutY="175.0" mnemonicParsing="false" text="Cambiar Estado" />
+                        <RadioButton layoutX="197.0" layoutY="272.0" mnemonicParsing="false" text="Departamentos" />
+                        <RadioButton layoutX="197.0" layoutY="240.0" mnemonicParsing="false" text="Usuarios" />
+                        <RadioButton layoutX="196.0" layoutY="209.0" mnemonicParsing="false" text="Agregar Nota" />
+                        <RadioButton layoutX="201.0" layoutY="306.0" mnemonicParsing="false" text="Flujo de Trabajo" />
+                        <RadioButton layoutX="333.0" layoutY="177.0" mnemonicParsing="false" text="Sistema" />
+                        <TextField layoutX="27.0" layoutY="145.0" />
+                        <Label layoutX="27.0" layoutY="131.0" text="Rol" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Sistema">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="109.0" layoutY="35.0" prefHeight="26.0" prefWidth="467.0" />
+                        <Label layoutX="48.0" layoutY="41.0" prefHeight="22.0" prefWidth="58.0" text="Empresa">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="83.0" fitWidth="101.0" layoutX="56.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/PROGRA%20I/IMAGENES/ticket.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="86.0" text="Logo" />
+                        <ComboBox layoutX="378.0" layoutY="92.0" prefWidth="150.0" />
+                        <Label layoutX="378.0" layoutY="78.0" text="Idioma" />
+                        <TextField layoutX="379.0" layoutY="160.0" />
+                        <Label layoutX="379.0" layoutY="142.0" text="Zona Horaria" />
+                        <Spinner layoutX="379.0" layoutY="221.0" prefHeight="26.0" prefWidth="165.0" />
+                        <Label layoutX="382.0" layoutY="204.0" text="Tiempo de Vigencia de Ticket" />
+                        <Label layoutX="380.0" layoutY="267.0" text="Niveles de Prioridad" />
+                        <ComboBox layoutX="378.0" layoutY="285.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Departamentos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="109.0" layoutY="36.0" />
+                        <TextArea layoutX="335.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="31.0" layoutY="40.0" text="Departamento" />
+                        <Label layoutX="335.0" layoutY="19.0" text="Descripcion" />
+                        <ScrollPane layoutX="41.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                        </ScrollPane>
+                        <Label layoutX="41.0" layoutY="81.0" text="Técnicos Asignados" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Estados">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="109.0" layoutY="35.0" prefHeight="26.0" prefWidth="158.0" />
+                        <ComboBox layoutX="333.0" layoutY="35.0" prefWidth="150.0" />
+                        <Label layoutX="335.0" layoutY="18.0" text="Estados" />
+                        <Label layoutX="336.0" layoutY="78.0" text="Estado Final" />
+                        <Label layoutX="109.0" layoutY="14.0" text="Nombre Estado" />
+                        <TextArea layoutX="34.0" layoutY="96.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="34.0" layoutY="78.0" text="Descripción" />
+                        <ComboBox layoutX="334.0" layoutY="96.0" prefWidth="150.0" />
+                        <Button layoutX="273.0" layoutY="34.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="37.0" text="+" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Flujos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="109.0" layoutY="35.0" prefHeight="26.0" prefWidth="158.0" />
+                        <ComboBox layoutX="88.0" layoutY="153.0" prefWidth="150.0" />
+                        <Label layoutX="89.0" layoutY="136.0" text="Estados" />
+                        <Label layoutX="336.0" layoutY="78.0" text="Transiciones" />
+                        <Label layoutX="109.0" layoutY="14.0" text="Nombre de Flujo" />
+                        <TextArea layoutX="336.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="336.0" layoutY="127.0" text="Descripción" />
+                        <ComboBox layoutX="334.0" layoutY="96.0" prefWidth="150.0" />
+                        <Button layoutX="273.0" layoutY="34.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="37.0" text="+" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="83.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/PROGRA%20I/IMAGENES/ticket.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Tickets" />
+      <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Usuarios" />
+      <Button layoutX="14.0" layoutY="172.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Sistema" />
+      <Button layoutX="14.0" layoutY="215.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Departamentos" />
+      <Button layoutX="14.0" layoutY="257.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Estados" />
+      <Button layoutX="14.0" layoutY="302.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Flujos" />
+   </children>
+</AnchorPane>
