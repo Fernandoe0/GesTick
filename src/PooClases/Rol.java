@@ -13,12 +13,12 @@ public class Rol {
     private String[] permisos;
     private int cantidadPermisos;
 
-    public Rol(String nombre, String[] permisos, int cantidadPermisos) {
+    public Rol(String nombre) {
         this.nombre = nombre;
         this.permisos = new String[5];
         this.cantidadPermisos = 0;
     }
-   
+
     public void agregarPermiso(String permiso) {
         if (cantidadPermisos < permisos.length) {
             permisos[cantidadPermisos++] = permiso;
