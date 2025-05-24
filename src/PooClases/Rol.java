@@ -9,15 +9,25 @@ package PooClases;
  * @author BICHO
  */
 public class Rol {
+    private int id;
     private String nombre;
     private String[] permisos;
     private int cantidadPermisos;
-
-    public Rol(String nombre) {
+    
+    public Rol(){
+        
+    }
+    
+    public Rol(int id) {
+        this.id = id;
+    }
+    public Rol(int id, String nombre) {
+        this.id = id;
         this.nombre = nombre;
         this.permisos = new String[5];
         this.cantidadPermisos = 0;
     }
+    
 
     public void agregarPermiso(String permiso) {
         if (cantidadPermisos < permisos.length) {
@@ -37,6 +47,14 @@ public class Rol {
         }
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getCantidadPermisos() {
         return cantidadPermisos;
     }
@@ -51,5 +69,11 @@ public class Rol {
     
     public String getNombre() {
         return nombre;
+    
+    }
+
+    @Override
+    public String toString() {
+        return "Rol{" + "nombre=" + nombre + '}';
     }
 }

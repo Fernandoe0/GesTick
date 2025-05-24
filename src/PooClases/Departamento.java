@@ -9,12 +9,22 @@ package PooClases;
  * @author BICHO
  */
 public class Departamento {
+    private int id;
     private String nombre;
     private String descripcion;
     private Persona[] empleados;
     private int cantidadEmpleados;
+    
+    public Departamento(){
+        
+    }
+    
+    public Departamento (int id) {
+        this.id = id;
+    }
 
-    public Departamento(String nombre, String descripcion, Persona[] empleados, int cantidadEmpleados) {
+    public Departamento(String nombre, String descripcion, Persona[] empleados, int id, int cantidadEmpleados) {
+        this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.empleados = new Persona[10];
@@ -39,6 +49,14 @@ public class Departamento {
             }
         }
      }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
